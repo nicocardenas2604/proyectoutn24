@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    background-color: red;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+
+.nab ul {
+    display: flex;
+}
+
+.nab ul li{
+    margin: 0 5vh;
+    list-style-type: none;
+}
+
+.nab ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.parte1{
+    display: flex;
+    background-color: green;
+}
+
+.parte1 .boxtittle{
+    background-color: aqua;
+    text-align: center;
+    padding: 5vh;
+    margin: 10vh;
+}
+
+.parte1 .imagen1{
+    background-color: yellow;
+    align-items: center;
+    margin: 10vh;
+}
