@@ -5,9 +5,14 @@
 
 header{
     display: flex;
-    background-color: red;
+    background-color: black;
     justify-content: space-between;
     padding: 2% 5%;
+}
+
+.logoPrincipal{
+    height: 60px;
+    width: auto;
 }
 
 .nab ul {
@@ -15,29 +20,64 @@ header{
 }
 
 .nab ul li{
-    margin: 0 5vh;
+    margin: 5vh 5vh;
     list-style-type: none;
 }
 
 .nab ul li a{
     text-decoration: none;
     text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+    color: rgb(177, 175, 175);
 }
 
 .parte1{
     display: flex;
-    background-color: green;
+    background-image: url(assetts/abstract-textured-backgound.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .parte1 .boxtittle{
-    background-color: aqua;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 5vh;
     margin: 10vh;
+    height: 40vh;
+    width: auto;
+    text-align: center;
+    color: antiquewhite;
 }
 
-.parte1 .imagen1{
-    background-color: yellow;
+.boxtittle h1{
+    font-family: "Roboto", sans-serif;
+}
+.boxtittle p{
+    font-family: sans-serif;
+    margin-top: 1%;
+}
+
+.parte1 .tienda{
     align-items: center;
     margin: 10vh;
+    background-image: cover;
+    height: 50vh;
+    width: auto;
+    border-radius: 1%;
+}
+
+.parte2{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 10%;
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.parte2 .catimg{
+    max-height: 40vh;
 }
