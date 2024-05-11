@@ -1,16 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-header{
+header {
     display: flex;
     background-color: black;
     justify-content: space-between;
     padding: 2% 5%;
 }
 
-.logoPrincipal{
+.logoPrincipal {
     height: 60px;
     width: auto;
 }
@@ -19,26 +19,26 @@ header{
     display: flex;
 }
 
-.nab ul li{
+.nab ul li {
     margin: 5vh 5vh;
     list-style-type: none;
 }
 
-.nab ul li a{
+.nab ul li a {
     text-decoration: none;
     text-transform: capitalize;
     font-family: "Roboto", sans-serif;
     color: rgb(177, 175, 175);
 }
 
-.parte1{
+.parte1 {
     display: flex;
     background-image: url(assetts/abstract-textured-backgound.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.parte1 .boxtittle{
+.parte1 .boxtittle {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,15 +51,16 @@ header{
     color: antiquewhite;
 }
 
-.boxtittle h1{
+h1 {
     font-family: "Roboto", sans-serif;
 }
-.boxtittle p{
+
+.boxtittle p {
     font-family: sans-serif;
     margin-top: 1%;
 }
 
-.parte1 .tienda{
+.parte1 .tienda {
     align-items: center;
     margin: 10vh;
     background-image: cover;
@@ -68,9 +69,9 @@ header{
     border-radius: 1%;
 }
 
-.parte2{
+.parte2 {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     margin: 10%;
     font-family: sans-serif;
@@ -78,6 +79,22 @@ header{
     text-transform: capitalize;
 }
 
-.parte2 .catimg{
+.parte2 .catimg {
     max-height: 40vh;
+}
+
+.tituloprod {
+    text-align: center;
+}
+
+.parte3 .articulos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    padding: 20px;
+    grid-gap: 10px;
+    width: 100%;
+    align-items: center;
+    margin: 0 20vh;
+
 }
