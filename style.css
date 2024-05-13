@@ -95,7 +95,7 @@ header {
     text-transform: capitalize;
 }
 
-.parte3 .articulos {
+.tienda .articulos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
@@ -132,12 +132,12 @@ header {
 
 }
 
-.parte4 {
+.formm {
     text-align: center;
     text-transform: capitalize;
 }
 
-.parte4 .formulario {
+.formm .formulario {
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -169,4 +169,48 @@ textarea {
     text-transform: capitalize;
     background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+
+footer .separator {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 12vw solid black;
+    margin-top: -13.5vw;
+    right: 25px;
+}
+
+
+footer {
+    padding: 25px 0 25px 20px;
+    background-color: black;
+    ;
+    top: 20px;
+    position: relative;
+    margin-top: 10%;
+}
+
+footer .redes a {
+    color: var(--secondary-color);
+    display: flex;
+    margin-top: 1%;
+    text-decoration: none;
+}
+
+footer .redes i {
+    margin-right: 15px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.whatsapp a {
+    color: green;
+    font-size: 40px;
 }
