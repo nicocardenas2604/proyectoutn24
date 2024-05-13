@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GRID</title>
+    <link rel="icon" href="assetts/icono.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,15 +23,15 @@
         <div class="nab">
             <ul>
                 <li>
-                    <a href="ini">inicio</a>
+                    <a href="#banner">inicio</a>
                 </li>
 
                 <li>
-                    <a href="prod">productos</a>
+                    <a href="#productos">productos</a>
                 </li>
 
                 <li>
-                    <a href="cont">contactos</a>
+                    <a href="#contacto">contacto</a>
                 </li>
 
             </ul>
@@ -38,12 +39,13 @@
     </header>
 
     <main>
-        <div class="parte1">
+        <div class="banner" id="banner">
             <div class="boxtittle">
                 <h1>Zapatillas GRID</h1>
 
-                <p>¡Comprá en Cuotas sin Interés y con Envíos a todo el País! Descubrí tu Estilo, Seguí la Moda y Marca
-                    Tendencia con GRID.</p>
+                <p>"¡Bienvenido a nuestro mundo de estilo y comodidad! En nuestra tienda de zapatillas, cada paso es una
+                    declaración de moda. Descubre la fusión perfecta entre diseño innovador y confort inigualable.
+                    ¡Prepárate para caminar con confianza y estilo en cada paso que des!"</p>
             </div>
 
             <div class="imagen1">
@@ -52,7 +54,7 @@
 
         </div>
 
-        <div class="parte2">
+        <div class="categorias" id="categorias">
             <div class="catt">
                 <img class="catimg" src="assetts/deportivas2.png" alt="deportivas">
                 <h4>deportivas</h4>
@@ -73,57 +75,57 @@
         </div>
 
 
-        <h1 class="titulo">Nuestros productos</h1>
+        <h1 class="titulo" id="productos">Nuestros productos</h1>
 
         <div class="parte3">
 
             <div class="articulos">
                 <article>
-                    <img src="" alt="img">
-                    <h5>nombre</h5>
-                    <h5>precio</h5>
-                    <button>boton</button>
+                    <img src="assetts/zapapuma.png" alt="img">
+                    <h5>Zapatillas Puma Caven 2.0 Unisex Blancas</h5>
+                    <h5>$69999</h5>
+                    <button>Comprar</button>
                 </article>
 
                 <article>
-                    <img src="" alt="img">
-                    <h5>nombre</h5>
-                    <h5>precio</h5>
-                    <button>boton</button>
+                    <img src="assetts/zapaair.png" alt="img">
+                    <h5>Zapatillas Nike Air More Uptempo 96 Hombre</h5>
+                    <h5>$329.999,00</h5>
+                    <button>Comprar</button>
                 </article>
 
                 <article>
-                    <img src="" alt="img">
-                    <h5>nombre</h5>
-                    <h5>precio</h5>
-                    <button>boton</button>
+                    <img src="assetts/zapadidas.png" alt="img">
+                    <h5>Zapatillas adidas Forum Mid Hombre con velcro</h5>
+                    <h5>$183.999</h5>
+                    <button>Comprar</button>
                 </article>
 
                 <article>
-                    <img src="" alt="img">
-                    <h5>nombre</h5>
-                    <h5>precio</h5>
-                    <button>boton</button>
+                    <img src="assetts/seilas.png" alt="img">
+                    <h5>Zapatillas de hombre Seilas GTX</h5>
+                    <h5>$134.887,50</h5>
+                    <button>Comprar</button>
                 </article>
 
                 <article>
-                    <img src="" alt="img">
-                    <h5>nombre</h5>
-                    <h5>precio</h5>
-                    <button>boton</button>
+                    <img src="assetts/zapadc.png" alt="img">
+                    <h5>Zapatillas Dc Pensford Ss Le - NEGRO/BLANCO/ROJO</h5>
+                    <h5>$120.800,00</h5>
+                    <button>Comprar</button>
                 </article>
 
                 <article>
-                    <img src="" alt="img">
-                    <h5>nombre</h5>
-                    <h5>precio</h5>
-                    <button>boton</button>
+                    <img src="assetts/zapaunder.png" alt="img">
+                    <h5>Zapatillas Under Armour Surge 3</h5>
+                    <h5>$70.099,00</h5>
+                    <button>Comprar</button>
                 </article>
 
             </div>
         </div>
 
-        <h1 class="titulo">contacto</h1>
+        <h1 class="titulo" id="contacto">contacto</h1>
 
         <form class="parte4" action="https://formspree.io/f/xdoqjgvb" method="POST">
 
@@ -146,7 +148,6 @@
     </main>
 
     <footer>
-        <h5>contacto</h5>
 
         <div class="redes">
             <a href=""><i class="fa-brands fa-facebook"></i></a>

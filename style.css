@@ -4,6 +4,11 @@
     font-family: sans-serif;
 }
 
+:root {
+    --primary-color: rgba(7, 7, 7, 0.792);
+    --secondary-color: yellow;
+}
+
 header {
     display: flex;
     background-color: black;
@@ -32,14 +37,20 @@ header {
     color: rgb(177, 175, 175);
 }
 
-.parte1 {
+.nab ul li a:hover {
+    color: var(--secondary-color);
+    font-weight: bold;
+    transition: 1s;
+}
+
+.banner {
     display: flex;
     background-image: url(assetts/abstract-textured-backgound.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.parte1 .boxtittle {
+.banner .boxtittle {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,7 +67,7 @@ header {
     margin-top: 1%;
 }
 
-.parte1 .tienda {
+.banner .tienda {
     align-items: center;
     margin: 10vh;
     background-image: cover;
@@ -65,7 +76,7 @@ header {
     border-radius: 1%;
 }
 
-.parte2 {
+.categorias {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,7 +85,7 @@ header {
     text-transform: capitalize;
 }
 
-.parte2 .catimg {
+.categorias .catimg {
     max-height: 40vh;
 }
 
@@ -98,10 +109,27 @@ header {
     border-radius: 10px;
     transition: 0.3s transform;
     text-align: center;
+    height: 50vh;
+    width: auto;
 }
 
 .articulos article:hover {
     transform: scale(1.03);
+}
+
+.articulos article img {
+    max-height: 60%;
+    width: auto;
+
+}
+
+.articulos article button {
+    border-radius: 3px;
+    padding: 1%;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+
 }
 
 .parte4 {
@@ -135,10 +163,10 @@ textarea {
     border: 1px solid rgb(255, 255, 255);
     padding: 5px 10px;
     display: block;
-    width: 50%;
+    width: 60%;
     margin: 2% auto;
     border-radius: 5px;
     text-transform: capitalize;
-    background-color: rgba(7, 7, 7, 0.792);
-    color: yellow;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
