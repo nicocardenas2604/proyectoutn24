@@ -4,6 +4,10 @@
     font-family: sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 :root {
     --primary-color: rgba(7, 7, 7, 0.792);
     --secondary-color: yellow;
@@ -67,13 +71,11 @@ header {
     margin-top: 1%;
 }
 
-.banner .tienda {
-    align-items: center;
-    margin: 10vh;
-    background-image: cover;
+.banner .local {
     height: 50vh;
     width: auto;
-    border-radius: 1%;
+    border-radius: 5%;
+    padding: 20vh;
 }
 
 .categorias {
@@ -213,4 +215,69 @@ footer .redes i {
 .whatsapp a {
     color: green;
     font-size: 40px;
+}
+
+@media (max-width: 880px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner .imagen1 {
+        text-align: center;
+    }
+
+    .banner .local {
+        width: 60%;
+        height: auto;
+        text-align: center;
+    }
+
+    .categorias {
+        display: flex;
+
+        flex-wrap: wrap;
+        margin: 5% auto;
+        max-width: 880px;
+    }
+
+    .categorias .catt {
+        flex-basis: 30%;
+        margin: 10px;
+    }
+
+    .categorias .catimg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .tienda .articulos {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+    .whatsapp {
+        right: 150px;
+        top: 550px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0;
+    }
+
+    .banner .local {
+        padding: 0;
+    }
+
+    .categorias .catt {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+
+    .tienda .articulos {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
 }
